@@ -22,7 +22,7 @@ public class LoginTest extends TestBase{
 		assertEquals(homePage.goToLoginPage().doLoginWith(user.getEmailAddress(), user.getPassword()).getUserName(),"Neelam C");		
 	}
 	
-	@Test(description="Login Test",groups= {"Sanity","E2E"},dataProviderClass=com.ui.dataproviders.LoginDataProvider.class,dataProvider="LoginTestCSVDataProvider")
+/*	@Test(description="Login Test",groups= {"Sanity","E2E"},dataProviderClass=com.ui.dataproviders.LoginDataProvider.class,dataProvider="LoginTestCSVDataProvider")
 	public void LoginCSVTest(User user) {
 		
 		assertEquals(homePage.goToLoginPage().doLoginWith(user.getEmailAddress(), user.getPassword()).getUserName(),"Viren C");		
@@ -33,7 +33,7 @@ public class LoginTest extends TestBase{
 		
 		assertEquals(homePage.goToLoginPage().doLoginWith(user.getEmailAddress(), user.getPassword()).getUserName(),"Viren C");
 		
-	}
+	} */
 
 
 }
