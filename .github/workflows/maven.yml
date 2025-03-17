@@ -52,9 +52,8 @@ jobs:
       uses: actions/upload-artifact@v4.6.1
       with:
         name: Test Reports
-        path: reports.html
-        overwrite: true
-        include-hidden-files: true
+        path: extent-reports/reports.html
+        
     - name: Test Execution Status
       run: echo "Test Execution Completed!!"
 
