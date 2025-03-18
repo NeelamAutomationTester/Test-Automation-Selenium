@@ -47,19 +47,21 @@ jobs:
         name: screenshots
         path: screenshots/
 
-    - name: Upload Extent Reports
+    - name: Upload HTML report as artifact
       if: always()
       uses: actions/upload-artifact@v4.6.1
       with:
-        name: Test Reports
-        path: extent-reports/reports.html
+        name: html-report
+        path: report.html
         
     - name: Test Execution Status
+      if: always()
       run: echo "Test Execution Completed!!"
 
     - name: Copy Report to gh-pages Folder
       if: always()
-      run:
+      
+      run: |
         mkdir -p public/extent-reports
         cp -R report.html public/extent-reports/
         cp -R screenshots/ public/extent-reports/screenshots/
