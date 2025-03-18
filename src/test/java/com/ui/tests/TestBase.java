@@ -32,7 +32,7 @@ public class TestBase {
 
 		} else {
 			logger.info("Load the Homepage of the website");
-			homePage = new HomePage(Browser.valueOf(browser.toUpperCase()), true);
+			homePage = new HomePage(Browser.valueOf(browser.toUpperCase()), isHeadless);
 		}
 	}
 
