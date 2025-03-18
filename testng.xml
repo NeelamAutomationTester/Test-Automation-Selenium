@@ -8,6 +8,8 @@
 		<parameter name="isHeadless" value="${isHeadless}"></parameter>
 		<classes>
 			<class name="com.ui.tests.LoginTest" />
+			<class name="com.ui.tests.InvalidCredLoginTest" />
+			
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
