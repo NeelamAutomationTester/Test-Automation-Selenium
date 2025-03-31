@@ -1,21 +1,10 @@
-2025-03-17 16:24:31 [main] INFO com.ui.listeners.TestListener Test Suit started.. 
-2025-03-17 16:24:51 [TestNG-test-UI Automation Test-1] INFO com.ui.listeners.TestListener LoginTest 
-2025-03-17 16:24:51 [TestNG-test-UI Automation Test-1] INFO com.ui.listeners.TestListener Login Test 
-2025-03-17 16:24:51 [TestNG-test-UI Automation Test-1] INFO com.ui.listeners.TestListener [Sanity, E2E] 
-2025-03-17 16:24:54 [TestNG-test-UI Automation Test-1] INFO com.ui.listeners.TestListener LoginTest PASSED!! 
-2025-03-17 16:25:05 [TestNG-test-UI Automation Test-1] INFO com.ui.listeners.TestListener LoginTest 
-2025-03-17 16:25:05 [TestNG-test-UI Automation Test-1] INFO com.ui.listeners.TestListener Login Test 
-2025-03-17 16:25:05 [TestNG-test-UI Automation Test-1] INFO com.ui.listeners.TestListener [Sanity, E2E] 
-2025-03-17 16:25:07 [TestNG-test-UI Automation Test-1] ERROR com.ui.listeners.TestListener LoginTest FAILED!! 
-2025-03-17 16:25:07 [TestNG-test-UI Automation Test-1] ERROR com.ui.listeners.TestListener no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title="View my customer account"]/span"}
-  (Session info: chrome=127.0.6533.73)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [27a68b390b46d7b84399a66a8fea449e, findElement {using=xpath, value=//a[@title="View my customer account"]/span}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.73, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Program Files (x86)\scop...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9225}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows XP, proxy: Proxy(), se:bidiEnabled: false, se:cdp: wss://cdp-eu.lambdatest.com..., se:cdpVersion: 127.0.6533.73, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 27a68b390b46d7b84399a66a8fea449e 
-2025-03-17 16:25:07 [TestNG-test-UI Automation Test-1] INFO com.ui.listeners.TestListener Capturing screenshot for the failed test.. 
-2025-03-17 16:25:08 [TestNG-test-UI Automation Test-1] INFO com.ui.listeners.TestListener Attaching the screenshot to the HTML file. 
-2025-03-17 16:25:09 [main] INFO com.ui.listeners.TestListener Test Suit completed!! 
+2025-03-31 19:25:09 [main] INFO com.ui.tests.ProductCheckoutTest Load the Homepage of the website 
+2025-03-31 19:25:09 [main] INFO com.ui.pages.HomePage Launching Browser for EDGE 
+2025-03-31 19:25:23 [main] INFO com.ui.pages.MyAccountPage Finding element with the locator By.id: search_query_top 
+2025-03-31 19:25:23 [main] INFO com.ui.pages.MyAccountPage Element found!! and now enter special key.. 
+2025-03-31 19:25:23 [main] INFO com.ui.pages.SearchResultPage Finding elements with the locator By.xpath: //h5[@itemprop="name"]/a 
+2025-03-31 19:25:23 [main] INFO com.ui.pages.SearchResultPage Clicking on the webelement [[EdgeDriver: MicrosoftEdge on windows (e337fcf250adc9ed4576ee2c4d9c23ff)] -> xpath: //h5[@itemprop="name"]/a] 
+2025-03-31 19:25:24 [main] INFO com.ui.pages.ProductDetailsPage Finding element with the locator By.id: group_1 
+2025-03-31 19:25:24 [main] INFO com.ui.pages.ProductDetailsPage Selecting the option from dropdown L 
+2025-03-31 19:25:32 [main] INFO com.ui.pages.PaymentPage Finding element with the locator By.xpath: //p[contains(@class,"alert-success")] 
+2025-03-31 19:25:32 [main] INFO com.ui.pages.PaymentPage Element found!! and now printing the text.. 

@@ -1,7 +1,5 @@
 package com.ui.tests;
 
-import static com.constants.Browser.CHROME;
-
 import org.apache.logging.log4j.Logger;
 import static org.testng.Assert.*;
 import org.testng.annotations.*;
