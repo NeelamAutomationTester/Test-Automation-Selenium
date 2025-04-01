@@ -9,6 +9,7 @@ import java.util.*;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
@@ -226,6 +227,16 @@ public abstract class BrowserUtility {
 		List<WebElement> elementList = driver.get().findElements(locator);
 
 		return elementList;
+	}
+	
+	public String acceptAlert() {
+		
+		Alert alert = driver.get().switchTo().alert();		
+		logger.info("Accepting alert..");
+		String alertMessage = alert.getText();
+		alert.accept();
+		return alertMessage;
+		
 	}
 
 	public String takeScreenshot(String name) {

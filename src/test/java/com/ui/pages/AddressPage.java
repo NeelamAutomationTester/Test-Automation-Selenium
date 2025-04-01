@@ -1,5 +1,6 @@
 package com.ui.pages;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -20,6 +21,7 @@ public class AddressPage extends BrowserUtility{
 	private static final By STATE_DROPDOWN_LOCATOR = By.id("id_state");
 	private static final By SAVE_ADDRESS_BUTTON_LOCATOR = By.id("submitAddress");
 	private static final By ADDRESS_HEADING = By.tagName("h3");
+	private static final By DELETE_ADDRESS_BUTTON_LOCATOR = By.xpath("//a[@title=\"Delete\"]");
 	
 	
 
@@ -45,6 +47,14 @@ public class AddressPage extends BrowserUtility{
 		String addressAlias = getVisibleText(ADDRESS_HEADING);
 		
 		 return addressAlias;	
+		
+	}
+	
+	public String deleteAddress() {
+		
+		clickOn(DELETE_ADDRESS_BUTTON_LOCATOR);
+		return acceptAlert();
+		
 		
 	}
 
