@@ -21,7 +21,7 @@ public class AddFirstNewAdressTest extends TestBase{
 		address = FakerUtility.getFakeAddress();
 	}
 	
-	@Test(description = "Add address", groups = {"Sanity", "Smoke", "E2E" })
+	@Test(priority = 0, description = "Add address", groups = {"Sanity", "Smoke", "E2E" })
 	public void addNewAddress() {
 		
 		String addressAlias = myAccountPage.goToAddAddressPage().saveAddress(address);

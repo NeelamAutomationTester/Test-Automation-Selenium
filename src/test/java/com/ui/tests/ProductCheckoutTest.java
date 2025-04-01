@@ -22,7 +22,7 @@ public class ProductCheckoutTest extends TestBase {
 		
 	}
 	
-	@Test(description ="Verify if the logged-in user is able to buy the product", groups= {"E2E","smoke"})
+	@Test(priority = 0, description ="Verify if the logged-in user is able to buy the product", groups= {"E2E","smoke"})
 	public void checkoutTest() {
 		String orderStatusMessage = searchResultPage.clickOnTheProductAt(1).changeSize(L).addProductToCart().proceedToCheckout().goToConfirmAddressPage().goToShipmentPage().goToPaymentPage().confirmOrder();
 		Assert.assertTrue(orderStatusMessage.contains("complete"));

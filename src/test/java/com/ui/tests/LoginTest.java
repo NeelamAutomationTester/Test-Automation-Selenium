@@ -14,7 +14,7 @@ public class LoginTest extends TestBase{
 
 	Logger logger =LoggerUtility.getLogger(this.getClass());
 	
-	@Test(description="Login Test",groups= {"Sanity","E2E"},dataProviderClass=com.ui.dataproviders.LoginDataProvider.class,dataProvider="LoginTestDataProvider")
+	@Test(priority = 0, description="Login Test",groups= {"Sanity","E2E"},dataProviderClass=com.ui.dataproviders.LoginDataProvider.class,dataProvider="LoginTestDataProvider")
 	public void loginTest(User user) {
 		
 		assertEquals(homePage.goToLoginPage().doLoginWith(user.getEmailAddress(), user.getPassword()).getUserName(),"Neelam C");		

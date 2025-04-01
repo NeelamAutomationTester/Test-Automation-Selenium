@@ -23,7 +23,7 @@ public class SearchProductTest extends TestBase {
 
 	}
 
-	@Test(description = "Verify that the user is able to search a product and correct results are displayed as a search result", groups = {
+	@Test(priority = 0, description = "Verify that the user is able to search a product and correct results are displayed as a search result", groups = {
 			"Sanity", "Smoke", "E2E" })
 	public void verifyProductSearchTest() {
 
