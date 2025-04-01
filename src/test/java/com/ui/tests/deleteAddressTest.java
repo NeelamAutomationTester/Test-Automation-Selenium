@@ -18,7 +18,7 @@ public class deleteAddressTest extends TestBase{
 		
 	}
 	
-	@Test(priority = 1, description = "Delete address", groups = {"Sanity", "Smoke", "E2E" })
+	@Test(priority = 5, description = "Delete address", groups = {"Sanity", "Smoke", "E2E" })
 	public void deleteAddress() {
 		
 		String alertMessage = addressPage.deleteAddress();
