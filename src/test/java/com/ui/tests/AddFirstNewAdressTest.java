@@ -21,11 +21,12 @@ public class AddFirstNewAdressTest extends TestBase{
 		address = FakerUtility.getFakeAddress();
 	}
 	
-	@Test(priority = 3, description = "Add address", groups = {"Sanity", "Smoke", "E2E" })
+	@Test(priority = 2, description = "Add address", groups = {"Sanity", "Smoke", "E2E" })
 	public void addNewAddress() {
 		
 		String addressAlias = myAccountPage.goToAddAddressPage().saveAddress(address);
 		Assert.assertEquals(addressAlias,address.getAddressAlias().toUpperCase());
+
 		
 	}
 

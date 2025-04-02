@@ -130,7 +130,7 @@ public abstract class BrowserUtility {
 
 		driver.get().manage().window().maximize(); // Maximizes browser window.
 	}
-
+	
 	public void clickOn(By locator) {
 
 		//WebElement element = driver.get().findElement(locator);

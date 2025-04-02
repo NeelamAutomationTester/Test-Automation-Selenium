@@ -12,7 +12,7 @@
 			<class name="com.ui.tests.SearchProductTest" />
 			<class name="com.ui.tests.AddFirstNewAdressTest" />
 			<class name="com.ui.tests.ProductCheckoutTest" />
-			<class name="com.ui.tests.deleteAddressTest" />
+			<class name="com.ui.tests.DeleteAddressTest" />
 			
 			
 			

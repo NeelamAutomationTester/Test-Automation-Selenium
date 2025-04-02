@@ -22,5 +22,9 @@ public class PaymentPage extends BrowserUtility {
 		clickOn(CONFIRM_ORDER_BUTTON_LOCATOR);
 		return getVisibleText(ALERT_SUCCESS_MESSAGE_LOCTOR);
 	}
+	
+	public void goToMyAddressesPage() {
+		
+	}
 
 }
